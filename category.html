@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类 - 古着商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="vintage-bg">
+    <!-- 顶部导航 -->
+    <header class="bg-white sticky top-0 z-50 safe-top border-b border-[#e5e5e5]">
+        <div class="flex items-center justify-between px-4 py-4">
+            <i class="fas fa-arrow-left text-black text-lg"></i>
+            <h1 class="text-base font-medium gradient-text tracking-wider uppercase">分类</h1>
+            <i class="fas fa-search text-black text-lg"></i>
+        </div>
+    </header>
+    
+    <!-- 搜索栏 -->
+    <section class="px-4 py-3 bg-white border-b border-[#e5e5e5]">
+        <div class="vintage-input w-full flex items-center">
+            <i class="fas fa-search text-[#999] mr-2"></i>
+            <input type="text" placeholder="搜索商品" class="flex-1 bg-transparent text-black placeholder-[#999] outline-none">
+        </div>
+    </section>
+
+    <div class="flex h-screen">
+        <!-- 左侧分类菜单 -->
+        <aside class="w-24 bg-white border-r border-[#e5e5e5]">
+            <div class="py-2">
+                <div class="px-3 py-4 text-center bg-black">
+                    <i class="fas fa-tshirt text-white text-lg mb-2"></i>
+                    <p class="text-[10px] text-white font-medium tracking-wider uppercase">外套</p>
+                </div>
+                <div class="px-3 py-4 text-center">
+                    <i class="fas fa-vest text-black text-lg mb-2"></i>
+                    <p class="text-[10px] text-black font-normal tracking-wider uppercase">衬衫</p>
+                </div>
+                <div class="px-3 py-4 text-center">
+                    <i class="fas fa-hand-sparkles text-black text-lg mb-2"></i>
+                    <p class="text-[10px] text-black font-normal tracking-wider uppercase">配饰</p>
+                </div>
+                <div class="px-3 py-4 text-center">
+                    <i class="fas fa-tshirt text-black text-lg mb-2"></i>
+                    <p class="text-[10px] text-black font-normal tracking-wider uppercase">下装</p>
+                </div>
+                <div class="px-3 py-4 text-center">
+                    <i class="fas fa-shoe-prints text-black text-lg mb-2"></i>
+                    <p class="text-[10px] text-black font-normal tracking-wider uppercase">鞋履</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 右侧商品列表 -->
+        <main class="flex-1 overflow-y-auto pb-20">
+            <div class="p-4">
+                <div class="mb-4">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80" alt="分类banner" class="w-full h-32 object-cover bg-black">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="card-shadow card-shadow-hover overflow-hidden">
+                        <div class="relative h-48 bg-black">
+                            <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 vintage-badge">限量</span>
+                        </div>
+                        <div class="p-4 bg-white">
+                            <p class="text-sm vintage-card-title mb-2 line-clamp-2">90年代复古夹克</p>
+                            <p class="vintage-price">¥299</p>
+                        </div>
+                    </div>
+                    <div class="card-shadow card-shadow-hover overflow-hidden">
+                        <div class="h-48 bg-black">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-white">
+                            <p class="text-sm vintage-card-title mb-2 line-clamp-2">经典格纹衬衫</p>
+                            <p class="vintage-price">¥189</p>
+                        </div>
+                    </div>
+                    <div class="card-shadow card-shadow-hover overflow-hidden">
+                        <div class="h-48 bg-black">
+                            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-white">
+                            <p class="text-sm vintage-card-title mb-2 line-clamp-2">复古牛仔外套</p>
+                            <p class="vintage-price">¥359</p>
+                        </div>
+                    </div>
+                    <div class="card-shadow card-shadow-hover overflow-hidden">
+                        <div class="h-48 bg-black">
+                            <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-white">
+                            <p class="text-sm vintage-card-title mb-2 line-clamp-2">vintage皮夹克</p>
+                            <p class="vintage-price">¥599</p>
+                        </div>
+                    </div>
+                    <div class="card-shadow card-shadow-hover overflow-hidden">
+                        <div class="h-48 bg-black">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-white">
+                            <p class="text-sm vintage-card-title mb-2 line-clamp-2">复古工装外套</p>
+                            <p class="vintage-price">¥329</p>
+                        </div>
+                    </div>
+                    <div class="card-shadow card-shadow-hover overflow-hidden">
+                        <div class="h-48 bg-black">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 bg-white">
+                            <p class="text-sm vintage-card-title mb-2 line-clamp-2">经典风衣外套</p>
+                            <p class="vintage-price">¥459</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 底部导航 -->
+    <nav class="bottom-nav fixed bottom-0 left-0 right-0 safe-bottom">
+        <div class="flex items-center justify-around py-3">
+            <div class="flex flex-col items-center">
+                <i class="fas fa-home text-[#999] text-base mb-1"></i>
+                <span class="text-[10px] text-[#999] tracking-wider uppercase">首页</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-th-large text-black text-base mb-1"></i>
+                <span class="text-[10px] text-black font-normal tracking-wider uppercase">分类</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-shopping-bag text-[#999] text-base mb-1"></i>
+                <span class="text-[10px] text-[#999] tracking-wider uppercase">购物车</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user text-[#999] text-base mb-1"></i>
+                <span class="text-[10px] text-[#999] tracking-wider uppercase">我的</span>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
+

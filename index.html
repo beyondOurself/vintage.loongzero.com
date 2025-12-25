@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古着商城 - 原型展示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .phone-frame {
+            width: 375px;
+            height: 812px;
+            background: #000000;
+            border-radius: 50px;
+            padding: 10px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255,255,255,0.1);
+            position: relative;
+        }
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+            overflow: hidden;
+            background: #ffffff;
+            position: relative;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 40px;
+        }
+        .notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 126px;
+            height: 37px;
+            background: #000000;
+            border-radius: 0 0 20px 20px;
+            z-index: 10;
+        }
+        .phone-label {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 14px;
+            color: #666;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-white p-8 min-h-screen">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl font-medium mb-8 text-center text-black tracking-wider uppercase">Vintage App 原型展示</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="mx-auto">
+                <div class="phone-frame relative">
+                    <div class="notch"></div>
+                    <div class="phone-screen">
+                        <iframe src="home.html"></iframe>
+                    </div>
+                </div>
+                <div class="phone-label">首页</div>
+            </div>
+            <div class="mx-auto">
+                <div class="phone-frame relative">
+                    <div class="notch"></div>
+                    <div class="phone-screen">
+                        <iframe src="category.html"></iframe>
+                    </div>
+                </div>
+                <div class="phone-label">分类</div>
+            </div>
+            <div class="mx-auto">
+                <div class="phone-frame relative">
+                    <div class="notch"></div>
+                    <div class="phone-screen">
+                        <iframe src="detail.html"></iframe>
+                    </div>
+                </div>
+                <div class="phone-label">商品详情</div>
+            </div>
+            <div class="mx-auto">
+                <div class="phone-frame relative">
+                    <div class="notch"></div>
+                    <div class="phone-screen">
+                        <iframe src="cart.html"></iframe>
+                    </div>
+                </div>
+                <div class="phone-label">购物车</div>
+            </div>
+            <div class="mx-auto">
+                <div class="phone-frame relative">
+                    <div class="notch"></div>
+                    <div class="phone-screen">
+                        <iframe src="search.html"></iframe>
+                    </div>
+                </div>
+                <div class="phone-label">搜索</div>
+            </div>
+            <div class="mx-auto">
+                <div class="phone-frame relative">
+                    <div class="notch"></div>
+                    <div class="phone-screen">
+                        <iframe src="profile.html"></iframe>
+                    </div>
+                </div>
+                <div class="phone-label">个人中心</div>
+            </div>
+            <div class="mx-auto">
+                <div class="phone-frame relative">
+                    <div class="notch"></div>
+                    <div class="phone-screen">
+                        <iframe src="orders.html"></iframe>
+                    </div>
+                </div>
+                <div class="phone-label">我的订单</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
