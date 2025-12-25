@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class="vintage-bg">
+    <script src="../../scrollbar-control.js"></script></head>
+<body class="vintage-bg" style="margin:0;padding:0;">
     <!-- 顶部导航 -->
-    <header class="bg-white sticky top-0 z-50 safe-top border-b border-[#e5e5e5]">
+    <header class="bg-white sticky top-0 z-50 safe-top border-b border-[#E8D5C4]">
         <div class="flex items-center justify-between px-4 py-4">
-            <i class="fas fa-arrow-left text-black text-lg"></i>
+            <i class="fas fa-arrow-left text-[#5C4033] text-lg"></i>
             <div class="flex items-center gap-5">
-                <i class="fas fa-share-alt text-black text-lg"></i>
-                <i class="fas fa-heart text-black text-lg"></i>
+                <i class="fas fa-share-alt text-[#5C4033] text-lg"></i>
+                <i class="fas fa-heart text-[#D2691E] text-lg"></i>
             </div>
         </div>
     </header>
@@ -30,7 +30,7 @@
             <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&q=80" alt="商品图2" class="w-full h-96 object-cover snap-center flex-shrink-0">
             <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80" alt="商品图3" class="w-full h-96 object-cover snap-center flex-shrink-0">
         </div>
-        <div class="absolute bottom-4 right-4 bg-black text-white text-[10px] px-2 py-1 tracking-wider uppercase">1/3</div>
+        <div class="absolute bottom-4 right-4 bg-[#8B6F47] text-white text-[10px] px-2 py-1 tracking-wider uppercase">1/3</div>
     </section>
 
     <!-- 商品信息 -->
@@ -38,16 +38,16 @@
         <div class="flex items-start justify-between mb-2">
             <div class="flex-1">
                 <h1 class="text-lg vintage-title mb-1">90年代复古夹克</h1>
-                <p class="text-sm text-[#666]">Vintage 1990s Denim Jacket</p>
+                <p class="text-sm text-[#C9A882]">Vintage 1990s Denim Jacket</p>
             </div>
             <span class="vintage-badge">限量</span>
         </div>
         <div class="flex items-baseline gap-2 mb-4">
             <span class="text-2xl vintage-price">¥299</span>
-            <span class="text-sm text-[#999] line-through">¥599</span>
-            <span class="text-xs bg-black text-white px-2 py-0.5 font-medium tracking-wider uppercase">5折</span>
+            <span class="text-sm text-[#C9A882] line-through">¥599</span>
+            <span class="text-xs bg-[#8B6F47] text-white px-2 py-0.5 font-medium tracking-wider uppercase">5折</span>
         </div>
-        <div class="flex items-center gap-4 text-sm text-[#666] mb-4">
+        <div class="flex items-center gap-4 text-sm text-[#C9A882] mb-4">
             <div class="flex items-center gap-1">
                 <i class="fas fa-star text-yellow-400"></i>
                 <span>4.8</span>
@@ -67,15 +67,15 @@
     <section class="px-4 py-4 border-t border-gray-100 bg-white">
         <div class="flex items-center justify-between mb-3">
             <span class="text-sm text-[#2d2d2d] font-semibold">选择规格</span>
-            <i class="fas fa-chevron-right text-[#999]"></i>
+            <i class="fas fa-chevron-right text-[#C9A882]"></i>
         </div>
         <div class="flex gap-2">
-            <span class="text-sm text-[#666] font-semibold">尺码：</span>
+            <span class="text-sm text-[#C9A882] font-semibold">尺码：</span>
             <div class="flex gap-2 flex-wrap">
-                <button class="px-4 py-1.5 border border-black text-sm text-black bg-white tracking-wider uppercase">S</button>
-                <button class="px-4 py-1.5 bg-black text-white text-sm font-medium tracking-wider uppercase">M</button>
-                <button class="px-4 py-1.5 border border-black text-sm text-black bg-white tracking-wider uppercase">L</button>
-                <button class="px-4 py-1.5 border border-black text-sm text-black bg-white tracking-wider uppercase">XL</button>
+                <button class="px-4 py-1.5 border border-[#C9A882] text-sm text-[#5C4033] bg-white tracking-wider uppercase">S</button>
+                <button class="px-4 py-1.5 bg-[#8B6F47] text-white text-sm font-medium tracking-wider uppercase">M</button>
+                <button class="px-4 py-1.5 border border-[#C9A882] text-sm text-[#5C4033] bg-white tracking-wider uppercase">L</button>
+                <button class="px-4 py-1.5 border border-[#C9A882] text-sm text-[#5C4033] bg-white tracking-wider uppercase">XL</button>
             </div>
         </div>
     </section>
@@ -84,9 +84,9 @@
     <section class="px-4 py-4 border-t border-gray-100 bg-white">
         <div class="flex items-center justify-between mb-3">
             <span class="text-sm font-semibold vintage-card-title">商品详情</span>
-            <i class="fas fa-chevron-down text-[#999]"></i>
+            <i class="fas fa-chevron-down text-[#C9A882]"></i>
         </div>
-        <div class="space-y-2 text-sm text-[#666]">
+        <div class="space-y-2 text-sm text-[#C9A882]">
             <p>• 90年代经典复古设计</p>
             <p>• 100%纯棉材质，舒适透气</p>
             <p>• 独特做旧工艺，展现vintage魅力</p>
@@ -101,12 +101,12 @@
     <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 safe-bottom shadow-lg">
         <div class="flex items-center">
             <button class="flex-1 flex flex-col items-center justify-center py-3">
-                <i class="fas fa-comments text-black text-base mb-1"></i>
-                <span class="text-[10px] text-black tracking-wider uppercase">客服</span>
+                <i class="fas fa-comments text-[#5C4033] text-base mb-1"></i>
+                <span class="text-[10px] text-[#5C4033] tracking-wider uppercase">客服</span>
             </button>
-            <button class="flex-1 flex flex-col items-center justify-center py-3 border-l border-[#e5e5e5]">
-                <i class="fas fa-shopping-cart text-black text-base mb-1"></i>
-                <span class="text-xs text-[#666]">购物车</span>
+            <button class="flex-1 flex flex-col items-center justify-center py-3 border-l border-[#E8D5C4]">
+                <i class="fas fa-shopping-cart text-[#5C4033] text-base mb-1"></i>
+                <span class="text-xs text-[#C9A882]">购物车</span>
             </button>
             <button class="flex-1 vintage-btn-secondary py-3 text-center tracking-wider uppercase">加入购物车</button>
             <button class="flex-1 vintage-btn py-3 text-center tracking-wider uppercase">立即购买</button>

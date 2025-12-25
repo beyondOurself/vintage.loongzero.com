@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 古着商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../../scrollbar-control.js"></script></head>
+<body class="vintage-bg" style="margin:0;padding:0;">
+    <!-- 用户信息头部 -->
+    <header class="bg-[#8B6F47] text-white safe-top">
+        <div class="px-4 pt-12 pb-8">
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="text-lg font-bold">个人中心</h1>
+                <div class="flex items-center gap-4">
+                    <i class="fas fa-bell text-xl"></i>
+                    <i class="fas fa-cog text-xl"></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                    <i class="fas fa-user text-2xl text-[#8B6F47]"></i>
+                </div>
+                <div class="flex-1">
+                    <p class="text-lg font-medium mb-1">古着爱好者</p>
+                    <p class="text-sm text-white/80">ID: vintage_2024</p>
+                </div>
+                <button class="px-4 py-1.5 bg-white text-[#8B6F47] text-sm border border-white font-medium tracking-wider uppercase">会员中心</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 订单状态 -->
+    <section class="card-shadow mx-4 -mt-6 p-4 relative z-10">
+        <div class="flex items-center justify-around">
+            <div class="flex flex-col items-center">
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#C9A882]">
+                    <i class="fas fa-wallet text-[#D2691E]"></i>
+                </div>
+                <span class="text-xs text-[#5C4033] font-semibold">待付款</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#C9A882]">
+                    <i class="fas fa-box text-[#D2691E]"></i>
+                </div>
+                <span class="text-xs text-[#5C4033] font-semibold">待发货</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#C9A882]">
+                    <i class="fas fa-truck text-[#D2691E]"></i>
+                </div>
+                <span class="text-xs text-[#5C4033] font-semibold">待收货</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#C9A882]">
+                    <i class="fas fa-star text-[#D2691E]"></i>
+                </div>
+                <span class="text-xs text-[#5C4033] font-semibold">待评价</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#C9A882]">
+                    <i class="fas fa-list text-[#D2691E]"></i>
+                </div>
+                <span class="text-xs text-[#2d2d2d] font-semibold">全部订单</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能菜单 -->
+    <main class="px-4 py-4 space-y-3">
+        <div class="card-shadow overflow-hidden">
+            <div class="flex items-center justify-between p-4 border-b border-[#e5e5e5]">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-heart text-[#D2691E]"></i>
+                    <span class="text-sm vintage-card-title">我的收藏</span>
+                </div>
+                <i class="fas fa-chevron-right text-[#C9A882]"></i>
+            </div>
+            <div class="flex items-center justify-between p-4 border-b border-gray-100">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-map-marker-alt text-[#D2691E]"></i>
+                    <span class="text-sm vintage-card-title">收货地址</span>
+                </div>
+                <i class="fas fa-chevron-right text-[#C9A882]"></i>
+            </div>
+            <div class="flex items-center justify-between p-4">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-gift text-[#D2691E]"></i>
+                    <span class="text-sm vintage-card-title">优惠券</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-xs text-[#5C4033] font-semibold">3张可用</span>
+                    <i class="fas fa-chevron-right text-[#C9A882]"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white overflow-hidden card-shadow">
+            <div class="flex items-center justify-between p-4 border-b border-[#E8D5C4]">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-coins text-[#D2691E]"></i>
+                    <span class="text-sm vintage-card-title">积分商城</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-xs text-[#5C4033] font-medium">1280积分</span>
+                    <i class="fas fa-chevron-right text-[#C9A882]"></i>
+                </div>
+            </div>
+            <div class="flex items-center justify-between p-4 border-b border-[#E8D5C4]">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-headset text-[#D2691E]"></i>
+                    <span class="text-sm vintage-card-title">客服中心</span>
+                </div>
+                <i class="fas fa-chevron-right text-[#C9A882]"></i>
+            </div>
+            <div class="flex items-center justify-between p-4">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-info-circle text-[#D2691E]"></i>
+                    <span class="text-sm vintage-card-title">关于我们</span>
+                </div>
+                <i class="fas fa-chevron-right text-[#C9A882]"></i>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部导航 -->
+    <nav class="bottom-nav fixed bottom-0 left-0 right-0 safe-bottom">
+        <div class="flex items-center justify-around py-2">
+            <div class="flex flex-col items-center">
+                <i class="fas fa-home text-[#C9A882] text-base mb-1"></i>
+                <span class="text-[10px] text-[#C9A882] tracking-wider uppercase">首页</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-th-large text-[#C9A882] text-base mb-1"></i>
+                <span class="text-[10px] text-[#C9A882] tracking-wider uppercase">分类</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-shopping-bag text-[#C9A882] text-base mb-1"></i>
+                <span class="text-[10px] text-[#C9A882] tracking-wider uppercase">购物车</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-user text-[#D2691E] text-base mb-1"></i>
+                <span class="text-[10px] text-[#D2691E] font-medium tracking-wider uppercase">我的</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="h-16"></div>
+</body>
+</html>
+

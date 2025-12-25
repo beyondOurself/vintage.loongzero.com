@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情 - 古着商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../../scrollbar-control.js"></script>`n</head>
+<body class="vintage-bg" style="margin:0;padding:0;">
+    <!-- 顶部导航 -->
+    <header class="bg-white sticky top-0 z-50 safe-top border-b border-[#E8E5E0]">
+        <div class="flex items-center justify-between px-4 py-4">
+            <i class="fas fa-arrow-left text-[#2D1C13] text-lg"></i>
+            <div class="flex items-center gap-5">
+                <i class="fas fa-share-alt text-[#2D1C13] text-lg"></i>
+                <i class="fas fa-heart text-[#876635] text-lg"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 商品图片轮播 -->
+    <section class="relative">
+        <div class="overflow-x-auto snap-x snap-mandatory flex scrollbar-hide">
+            <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=800&q=80" alt="商品图1" class="w-full h-96 object-cover snap-center flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&q=80" alt="商品图2" class="w-full h-96 object-cover snap-center flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80" alt="商品图3" class="w-full h-96 object-cover snap-center flex-shrink-0">
+        </div>
+        <div class="absolute bottom-4 right-4 bg-[#351D14] text-white text-[10px] px-2 py-1 tracking-wider uppercase">1/3</div>
+    </section>
+
+    <!-- 商品信息 -->
+    <section class="px-4 py-4">
+        <div class="flex items-start justify-between mb-2">
+            <div class="flex-1">
+                <h1 class="text-lg vintage-title mb-1">90年代复古夹克</h1>
+                <p class="text-sm text-[#857C72]">Vintage 1990s Denim Jacket</p>
+            </div>
+            <span class="vintage-badge">限量</span>
+        </div>
+        <div class="flex items-baseline gap-2 mb-4">
+            <span class="text-2xl vintage-price">¥299</span>
+            <span class="text-sm text-[#857C72] line-through">¥599</span>
+            <span class="text-xs bg-[#351D14] text-white px-2 py-0.5 font-medium tracking-wider uppercase">5折</span>
+        </div>
+        <div class="flex items-center gap-4 text-sm text-[#857C72] mb-4">
+            <div class="flex items-center gap-1">
+                <i class="fas fa-star text-yellow-400"></i>
+                <span>4.8</span>
+            </div>
+            <div class="flex items-center gap-1">
+                <i class="fas fa-comment"></i>
+                <span>128条评价</span>
+            </div>
+            <div class="flex items-center gap-1">
+                <i class="fas fa-truck"></i>
+                <span>包邮</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 选择规格 -->
+    <section class="px-4 py-4 border-t border-gray-100 bg-white">
+        <div class="flex items-center justify-between mb-3">
+            <span class="text-sm text-[#2d2d2d] font-semibold">选择规格</span>
+            <i class="fas fa-chevron-right text-[#857C72]"></i>
+        </div>
+        <div class="flex gap-2">
+            <span class="text-sm text-[#857C72] font-semibold">尺码：</span>
+            <div class="flex gap-2 flex-wrap">
+                <button class="px-4 py-1.5 border border-[#857C72] text-sm text-[#2D1C13] bg-white tracking-wider uppercase">S</button>
+                <button class="px-4 py-1.5 bg-[#351D14] text-white text-sm font-medium tracking-wider uppercase">M</button>
+                <button class="px-4 py-1.5 border border-[#857C72] text-sm text-[#2D1C13] bg-white tracking-wider uppercase">L</button>
+                <button class="px-4 py-1.5 border border-[#857C72] text-sm text-[#2D1C13] bg-white tracking-wider uppercase">XL</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商品详情 -->
+    <section class="px-4 py-4 border-t border-gray-100 bg-white">
+        <div class="flex items-center justify-between mb-3">
+            <span class="text-sm font-semibold vintage-card-title">商品详情</span>
+            <i class="fas fa-chevron-down text-[#857C72]"></i>
+        </div>
+        <div class="space-y-2 text-sm text-[#857C72]">
+            <p>• 90年代经典复古设计</p>
+            <p>• 100%纯棉材质，舒适透气</p>
+            <p>• 独特做旧工艺，展现vintage魅力</p>
+            <p>• 仅此一件，绝版收藏</p>
+        </div>
+        <div class="mt-4">
+            <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=800&q=80" alt="详情图" class="w-full rounded-lg">
+        </div>
+    </section>
+
+    <!-- 底部操作栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 safe-bottom shadow-lg">
+        <div class="flex items-center">
+            <button class="flex-1 flex flex-col items-center justify-center py-3">
+                <i class="fas fa-comments text-[#2D1C13] text-base mb-1"></i>
+                <span class="text-[10px] text-[#2D1C13] tracking-wider uppercase">客服</span>
+            </button>
+            <button class="flex-1 flex flex-col items-center justify-center py-3 border-l border-[#E8E5E0]">
+                <i class="fas fa-shopping-cart text-[#2D1C13] text-base mb-1"></i>
+                <span class="text-xs text-[#857C72]">购物车</span>
+            </button>
+            <button class="flex-1 vintage-btn-secondary py-3 text-center tracking-wider uppercase">加入购物车</button>
+            <button class="flex-1 vintage-btn py-3 text-center tracking-wider uppercase">立即购买</button>
+        </div>
+    </div>
+
+    <div class="h-16"></div>
+</body>
+</html>
+

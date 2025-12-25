@@ -1,0 +1,298 @@
+/* 古着商城 - 美拉德配色风格 */
+*,
+*::before,
+*::after {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #FAF0E6; /* 奶油色背景 */
+    color: #5C4033; /* 深棕色文字 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* 安全区域适配 */
+.safe-top {
+    padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 滚动优化 */
+.scroll-smooth {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 完全隐藏滚动条 - 不占用任何空间 */
+html,
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+    display: none;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+    display: none;
+    background: transparent;
+}
+
+/* 隐藏滚动条（用于特定元素） */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* 图片懒加载占位 */
+.img-placeholder {
+    background: linear-gradient(90deg, #F5E6D3 25%, #E8D5C4 50%, #F5E6D3 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* 底部导航栏 */
+.bottom-nav {
+    background: #FFFFFF;
+    border-top: 1px solid #E8D5C4;
+    box-shadow: 0 -2px 8px rgba(92, 64, 51, 0.05);
+}
+
+/* 卡片 */
+.card-shadow {
+    box-shadow: 0 2px 8px rgba(92, 64, 51, 0.08);
+    background: #FFFFFF;
+    border: 1px solid #E8D5C4;
+    border-radius: 8px;
+}
+
+.card-shadow-hover {
+    transition: all 0.3s ease;
+}
+
+.card-shadow-hover:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 4px rgba(92, 64, 51, 0.12);
+}
+
+/* 文字样式 */
+.gradient-text {
+    color: #5C4033;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* 背景 */
+.vintage-bg {
+    background: #FAF0E6;
+}
+
+/* 按钮 - 主色 */
+.vintage-btn {
+    background: #8B6F47; /* 咖啡色 */
+    color: #FFFFFF;
+    border: 1px solid #8B6F47;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+}
+
+.vintage-btn:active {
+    background: #A0826D; /* 浅咖啡色 */
+    border-color: #A0826D;
+    transform: scale(0.98);
+}
+
+.vintage-btn-secondary {
+    background: #FFFFFF;
+    color: #8B6F47;
+    border: 1px solid #C9A882; /* 浅棕色 */
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+}
+
+.vintage-btn-secondary:active {
+    background: #FAF0E6;
+    border-color: #A0826D;
+}
+
+/* 强调按钮 - 焦糖色 */
+.vintage-btn-accent {
+    background: #D2691E; /* 焦糖色 */
+    color: #FFFFFF;
+    border: 1px solid #D2691E;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+}
+
+.vintage-btn-accent:active {
+    background: #CD853F; /* 浅焦糖色 */
+    border-color: #CD853F;
+    transform: scale(0.98);
+}
+
+/* 标签 */
+.vintage-badge {
+    background: #8B6F47; /* 咖啡色 */
+    color: #FFFFFF;
+    border: none;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+/* 价格 */
+.vintage-price {
+    color: #6B4423; /* 深焦糖色 */
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+/* 标题 */
+.vintage-title {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5C4033; /* 深棕色 */
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* 输入框 */
+.vintage-input {
+    background: #FFFFFF;
+    border: 1px solid #E8D5C4; /* 浅米色 */
+    border-radius: 6px;
+    color: #5C4033;
+    padding: 10px 16px;
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.vintage-input::placeholder {
+    color: #C9A882; /* 浅棕色 */
+}
+
+.vintage-input:focus {
+    outline: none;
+    border-color: #8B6F47; /* 咖啡色 */
+    box-shadow: 0 0 0 2px rgba(139, 111, 71, 0.1);
+}
+
+/* 标签页 */
+.vintage-tab {
+    border-bottom: 2px solid transparent;
+    color: #C9A882; /* 浅棕色 */
+    padding: 12px 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+}
+
+.vintage-tab.active {
+    border-bottom-color: #8B6F47; /* 咖啡色 */
+    color: #6B4423; /* 深焦糖色 */
+    font-weight: 600;
+}
+
+/* 卡片标题 */
+.vintage-card-title {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #5C4033; /* 深棕色 */
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+/* 分隔线 */
+.vintage-divider {
+    height: 1px;
+    background: #E8D5C4; /* 浅米色分隔线 */
+    margin: 16px 0;
+}
+
+/* 强调文字 */
+.vintage-accent {
+    color: #D2691E; /* 焦糖色 */
+}
+
+/* 次要文字 */
+.vintage-muted {
+    color: #C9A882; /* 浅棕色 */
+}

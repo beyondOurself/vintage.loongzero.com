@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的订单 - 古着商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../../scrollbar-control.js"></script></head>
+<body class="vintage-bg" style="margin:0;padding:0;">
+    <!-- 顶部导航 -->
+    <header class="bg-white sticky top-0 z-50 safe-top shadow-sm">
+        <div class="flex items-center justify-between px-4 py-3">
+            <i class="fas fa-arrow-left text-[#5C4033] text-lg"></i>
+            <h1 class="text-lg font-bold gradient-text">我的订单</h1>
+            <i class="fas fa-search text-[#5C4033] text-lg"></i>
+        </div>
+    </header>
+
+    <!-- 订单状态标签 -->
+    <div class="bg-white border-b border-gray-100">
+        <div class="flex items-center overflow-x-auto scroll-smooth px-4">
+            <div class="flex items-center gap-6 min-w-full">
+                <button class="py-3 text-sm font-semibold text-[#5C4033] border-b-2 border-[#D2691E] whitespace-nowrap">全部</button>
+                <button class="py-3 text-sm text-[#C9A882] whitespace-nowrap">待付款</button>
+                <button class="py-3 text-sm text-[#C9A882] whitespace-nowrap">待发货</button>
+                <button class="py-3 text-sm text-[#C9A882] whitespace-nowrap">待收货</button>
+                <button class="py-3 text-sm text-[#C9A882] whitespace-nowrap">待评价</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 订单列表 -->
+    <main class="pb-4">
+        <div class="px-4 py-4 space-y-3">
+            <!-- 订单1 -->
+            <div class="card-shadow rounded-lg overflow-hidden">
+                <div class="px-4 py-3 border-b border-gray-100 flex items-center justify-between bg-white">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-[#C9A882]">订单号：20241201001</span>
+                    </div>
+                    <span class="text-xs text-[#5C4033] font-semibold">待发货</span>
+                </div>
+                <div class="p-4 bg-white">
+                    <div class="flex items-start gap-3 mb-3">
+                        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=200&q=80" alt="商品" class="w-20 h-20 object-cover rounded-2xl">
+                        <div class="flex-1">
+                            <h3 class="text-sm font-semibold vintage-card-title mb-1">90年代复古夹克</h3>
+                            <p class="text-xs text-[#C9A882] mb-2">尺码：M | 颜色：蓝色</p>
+                            <p class="vintage-price">¥299</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+                        <span class="text-xs text-[#C9A882]">共1件商品 合计：<span class="vintage-price">¥299</span></span>
+                        <div class="flex gap-2">
+                            <button class="px-4 py-1.5 border border-gray-200 rounded-full text-xs text-[#C9A882] bg-white">查看详情</button>
+                            <button class="px-4 py-1.5 vintage-btn rounded-full text-xs">提醒发货</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 订单2 -->
+            <div class="card-shadow rounded-lg overflow-hidden">
+                <div class="px-4 py-3 border-b-2 border-[#d4c4b0] flex items-center justify-between bg-[#faf8f4]">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-[#6b5d4f]">订单号：20241128002</span>
+                    </div>
+                    <span class="text-xs text-[#5C4033] font-semibold">已完成</span>
+                </div>
+                <div class="p-4 bg-[#faf8f4]">
+                    <div class="flex items-start gap-3 mb-3">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=200&q=80" alt="商品" class="w-20 h-20 object-cover rounded border-2 border-[#d4c4b0]">
+                        <div class="flex-1">
+                            <h3 class="text-sm font-semibold vintage-card-title mb-1">经典格纹衬衫</h3>
+                            <p class="text-xs text-[#6b5d4f] mb-2">尺码：L | 颜色：红格</p>
+                            <p class="vintage-price">¥189</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t-2 border-[#d4c4b0]">
+                        <span class="text-xs text-[#6b5d4f]">共1件商品 合计：<span class="vintage-price">¥189</span></span>
+                        <div class="flex gap-2">
+                            <button class="px-4 py-1.5 border-2 border-[#d4c4b0] rounded text-xs text-[#6b5d4f] bg-[#faf8f4]">查看详情</button>
+                            <button class="px-4 py-1.5 vintage-btn rounded text-xs">再次购买</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 订单3 -->
+            <div class="card-shadow rounded-lg overflow-hidden">
+                <div class="px-4 py-3 border-b-2 border-[#d4c4b0] flex items-center justify-between bg-[#faf8f4]">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-[#6b5d4f]">订单号：20241125003</span>
+                    </div>
+                    <span class="text-xs text-[#5C4033] font-semibold">待收货</span>
+                </div>
+                <div class="p-4 bg-[#faf8f4]">
+                    <div class="flex items-start gap-3 mb-3">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=200&q=80" alt="商品" class="w-20 h-20 object-cover rounded border-2 border-[#d4c4b0]">
+                        <div class="flex-1">
+                            <h3 class="text-sm font-semibold vintage-card-title mb-1">复古牛仔外套</h3>
+                            <p class="text-xs text-[#6b5d4f] mb-2">尺码：M | 颜色：蓝色</p>
+                            <p class="vintage-price">¥359</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t-2 border-[#d4c4b0]">
+                        <span class="text-xs text-[#6b5d4f]">共1件商品 合计：<span class="vintage-price">¥359</span></span>
+                        <div class="flex gap-2">
+                            <button class="px-4 py-1.5 border-2 border-[#d4c4b0] rounded text-xs text-[#6b5d4f] bg-[#faf8f4]">查看物流</button>
+                            <button class="px-4 py-1.5 vintage-btn rounded text-xs">确认收货</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+

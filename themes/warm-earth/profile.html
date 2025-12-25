@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class="vintage-bg">
+    <script src="../../scrollbar-control.js"></script>`n</head>
+<body class="vintage-bg" style="margin:0;padding:0;">
     <!-- 用户信息头部 -->
-    <header class="bg-black text-white safe-top">
+    <header class="bg-[#351D14] text-white safe-top">
         <div class="px-4 pt-12 pb-8">
             <div class="flex items-center justify-between mb-4">
                 <h1 class="text-lg font-bold">个人中心</h1>
@@ -21,13 +21,13 @@
             </div>
             <div class="flex items-center gap-4">
                 <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                    <i class="fas fa-user text-2xl text-black"></i>
+                    <i class="fas fa-user text-2xl text-[#351D14]"></i>
                 </div>
                 <div class="flex-1">
                     <p class="text-lg font-medium mb-1">古着爱好者</p>
                     <p class="text-sm text-white/80">ID: vintage_2024</p>
                 </div>
-                <button class="px-4 py-1.5 bg-white text-black text-sm border border-white font-medium tracking-wider uppercase">会员中心</button>
+                <button class="px-4 py-1.5 bg-white text-[#351D14] text-sm border border-white font-medium tracking-wider uppercase">会员中心</button>
             </div>
         </div>
     </header>
@@ -36,32 +36,32 @@
     <section class="card-shadow mx-4 -mt-6 p-4 relative z-10">
         <div class="flex items-center justify-around">
             <div class="flex flex-col items-center">
-                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-black">
-                    <i class="fas fa-wallet text-black"></i>
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#857C72]">
+                    <i class="fas fa-wallet text-[#876635]"></i>
                 </div>
-                <span class="text-xs text-[#2d2d2d] font-semibold">待付款</span>
+                <span class="text-xs text-[#2D1C13] font-semibold">待付款</span>
             </div>
             <div class="flex flex-col items-center">
-                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-black">
-                    <i class="fas fa-box text-black"></i>
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#857C72]">
+                    <i class="fas fa-box text-[#876635]"></i>
                 </div>
-                <span class="text-xs text-[#2d2d2d] font-semibold">待发货</span>
+                <span class="text-xs text-[#2D1C13] font-semibold">待发货</span>
             </div>
             <div class="flex flex-col items-center">
-                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-black">
-                    <i class="fas fa-truck text-black"></i>
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#857C72]">
+                    <i class="fas fa-truck text-[#876635]"></i>
                 </div>
-                <span class="text-xs text-[#2d2d2d] font-semibold">待收货</span>
+                <span class="text-xs text-[#2D1C13] font-semibold">待收货</span>
             </div>
             <div class="flex flex-col items-center">
-                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-black">
-                    <i class="fas fa-star text-black"></i>
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#857C72]">
+                    <i class="fas fa-star text-[#876635]"></i>
                 </div>
-                <span class="text-xs text-[#2d2d2d] font-semibold">待评价</span>
+                <span class="text-xs text-[#2D1C13] font-semibold">待评价</span>
             </div>
             <div class="flex flex-col items-center">
-                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-black">
-                    <i class="fas fa-list text-black"></i>
+                <div class="w-14 h-14 bg-white flex items-center justify-center mb-2 border border-[#857C72]">
+                    <i class="fas fa-list text-[#876635]"></i>
                 </div>
                 <span class="text-xs text-[#2d2d2d] font-semibold">全部订单</span>
             </div>
@@ -73,54 +73,54 @@
         <div class="card-shadow overflow-hidden">
             <div class="flex items-center justify-between p-4 border-b border-[#e5e5e5]">
                 <div class="flex items-center gap-3">
-                    <i class="fas fa-heart text-black"></i>
+                    <i class="fas fa-heart text-[#876635]"></i>
                     <span class="text-sm vintage-card-title">我的收藏</span>
                 </div>
-                <i class="fas fa-chevron-right text-black"></i>
+                <i class="fas fa-chevron-right text-[#857C72]"></i>
             </div>
             <div class="flex items-center justify-between p-4 border-b border-gray-100">
                 <div class="flex items-center gap-3">
-                    <i class="fas fa-map-marker-alt text-black"></i>
+                    <i class="fas fa-map-marker-alt text-[#876635]"></i>
                     <span class="text-sm vintage-card-title">收货地址</span>
                 </div>
-                <i class="fas fa-chevron-right text-[#999]"></i>
+                <i class="fas fa-chevron-right text-[#857C72]"></i>
             </div>
             <div class="flex items-center justify-between p-4">
                 <div class="flex items-center gap-3">
-                    <i class="fas fa-gift text-black"></i>
+                    <i class="fas fa-gift text-[#876635]"></i>
                     <span class="text-sm vintage-card-title">优惠券</span>
                 </div>
                 <div class="flex items-center gap-2">
-                    <span class="text-xs text-black font-semibold">3张可用</span>
-                    <i class="fas fa-chevron-right text-[#999]"></i>
+                    <span class="text-xs text-[#2D1C13] font-semibold">3张可用</span>
+                    <i class="fas fa-chevron-right text-[#857C72]"></i>
                 </div>
             </div>
         </div>
 
         <div class="bg-white overflow-hidden card-shadow">
-            <div class="flex items-center justify-between p-4 border-b border-gray-100">
+            <div class="flex items-center justify-between p-4 border-b border-[#E8E5E0]">
                 <div class="flex items-center gap-3">
-                    <i class="fas fa-coins text-black"></i>
+                    <i class="fas fa-coins text-[#876635]"></i>
                     <span class="text-sm vintage-card-title">积分商城</span>
                 </div>
                 <div class="flex items-center gap-2">
-                    <span class="text-xs text-black font-medium">1280积分</span>
-                    <i class="fas fa-chevron-right text-[#999]"></i>
+                    <span class="text-xs text-[#2D1C13] font-medium">1280积分</span>
+                    <i class="fas fa-chevron-right text-[#857C72]"></i>
                 </div>
             </div>
-            <div class="flex items-center justify-between p-4 border-b border-[#e5e5e5]">
+            <div class="flex items-center justify-between p-4 border-b border-[#E8E5E0]">
                 <div class="flex items-center gap-3">
-                    <i class="fas fa-headset text-black"></i>
+                    <i class="fas fa-headset text-[#876635]"></i>
                     <span class="text-sm vintage-card-title">客服中心</span>
                 </div>
-                <i class="fas fa-chevron-right text-[#999]"></i>
+                <i class="fas fa-chevron-right text-[#857C72]"></i>
             </div>
             <div class="flex items-center justify-between p-4">
                 <div class="flex items-center gap-3">
-                    <i class="fas fa-info-circle text-black"></i>
+                    <i class="fas fa-info-circle text-[#876635]"></i>
                     <span class="text-sm vintage-card-title">关于我们</span>
                 </div>
-                <i class="fas fa-chevron-right text-[#999]"></i>
+                <i class="fas fa-chevron-right text-[#857C72]"></i>
             </div>
         </div>
     </main>
@@ -129,20 +129,20 @@
     <nav class="bottom-nav fixed bottom-0 left-0 right-0 safe-bottom">
         <div class="flex items-center justify-around py-2">
             <div class="flex flex-col items-center">
-                <i class="fas fa-home text-[#999] text-base mb-1"></i>
-                <span class="text-[10px] text-[#999] tracking-wider uppercase">首页</span>
+                <i class="fas fa-home text-[#857C72] text-base mb-1"></i>
+                <span class="text-[10px] text-[#857C72] tracking-wider uppercase">首页</span>
             </div>
             <div class="flex flex-col items-center">
-                <i class="fas fa-th-large text-[#999] text-base mb-1"></i>
-                <span class="text-[10px] text-[#999] tracking-wider uppercase">分类</span>
+                <i class="fas fa-th-large text-[#857C72] text-base mb-1"></i>
+                <span class="text-[10px] text-[#857C72] tracking-wider uppercase">分类</span>
             </div>
             <div class="flex flex-col items-center">
-                <i class="fas fa-shopping-bag text-[#999] text-base mb-1"></i>
-                <span class="text-[10px] text-[#999] tracking-wider uppercase">购物车</span>
+                <i class="fas fa-shopping-bag text-[#857C72] text-base mb-1"></i>
+                <span class="text-[10px] text-[#857C72] tracking-wider uppercase">购物车</span>
             </div>
             <div class="flex flex-col items-center">
-                <i class="fas fa-user text-black text-base mb-1"></i>
-                <span class="text-[10px] text-black font-normal tracking-wider uppercase">我的</span>
+                <i class="fas fa-user text-[#876635] text-base mb-1"></i>
+                <span class="text-[10px] text-[#876635] font-medium tracking-wider uppercase">我的</span>
             </div>
         </div>
     </nav>

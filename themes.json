@@ -1,0 +1,28 @@
+{
+  "themes": [
+    {
+      "id": "warm-earth",
+      "name": "暖色大地",
+      "description": "暖色大地色系风格，适合古着商城",
+      "path": "themes/warm-earth",
+      "preview": {
+        "primaryColor": "#351D14",
+        "accentColor": "#876635",
+        "backgroundColor": "#F5F3F0"
+      }
+    },
+    {
+      "id": "maillard",
+      "name": "美拉德配色",
+      "description": "温暖焦糖咖啡色系，如烤面包般的温暖质感",
+      "path": "themes/maillard",
+      "preview": {
+        "primaryColor": "#8B6F47",
+        "accentColor": "#D2691E",
+        "backgroundColor": "#FAF0E6"
+      }
+    }
+  ],
+  "defaultTheme": "warm-earth"
+}
+

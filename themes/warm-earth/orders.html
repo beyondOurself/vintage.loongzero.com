@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class="vintage-bg">
+    <script src="../../scrollbar-control.js"></script>`n</head>
+<body class="vintage-bg" style="margin:0;padding:0;">
     <!-- 顶部导航 -->
     <header class="bg-white sticky top-0 z-50 safe-top shadow-sm">
         <div class="flex items-center justify-between px-4 py-3">
-            <i class="fas fa-arrow-left text-black text-lg"></i>
+            <i class="fas fa-arrow-left text-[#2D1C13] text-lg"></i>
             <h1 class="text-lg font-bold gradient-text">我的订单</h1>
-            <i class="fas fa-search text-black text-lg"></i>
+            <i class="fas fa-search text-[#2D1C13] text-lg"></i>
         </div>
     </header>
 
@@ -22,11 +22,11 @@
     <div class="bg-white border-b border-gray-100">
         <div class="flex items-center overflow-x-auto scroll-smooth px-4">
             <div class="flex items-center gap-6 min-w-full">
-                <button class="py-3 text-sm font-semibold text-black border-b-2 border-[#ff9800] whitespace-nowrap">全部</button>
-                <button class="py-3 text-sm text-[#666] whitespace-nowrap">待付款</button>
-                <button class="py-3 text-sm text-[#666] whitespace-nowrap">待发货</button>
-                <button class="py-3 text-sm text-[#666] whitespace-nowrap">待收货</button>
-                <button class="py-3 text-sm text-[#666] whitespace-nowrap">待评价</button>
+                <button class="py-3 text-sm font-semibold text-[#2D1C13] border-b-2 border-[#876635] whitespace-nowrap">全部</button>
+                <button class="py-3 text-sm text-[#857C72] whitespace-nowrap">待付款</button>
+                <button class="py-3 text-sm text-[#857C72] whitespace-nowrap">待发货</button>
+                <button class="py-3 text-sm text-[#857C72] whitespace-nowrap">待收货</button>
+                <button class="py-3 text-sm text-[#857C72] whitespace-nowrap">待评价</button>
             </div>
         </div>
     </div>
@@ -38,23 +38,23 @@
             <div class="card-shadow rounded-lg overflow-hidden">
                 <div class="px-4 py-3 border-b border-gray-100 flex items-center justify-between bg-white">
                     <div class="flex items-center gap-2">
-                        <span class="text-xs text-[#666]">订单号：20241201001</span>
+                        <span class="text-xs text-[#857C72]">订单号：20241201001</span>
                     </div>
-                    <span class="text-xs text-black font-semibold">待发货</span>
+                    <span class="text-xs text-[#2D1C13] font-semibold">待发货</span>
                 </div>
                 <div class="p-4 bg-white">
                     <div class="flex items-start gap-3 mb-3">
                         <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=200&q=80" alt="商品" class="w-20 h-20 object-cover rounded-2xl">
                         <div class="flex-1">
                             <h3 class="text-sm font-semibold vintage-card-title mb-1">90年代复古夹克</h3>
-                            <p class="text-xs text-[#666] mb-2">尺码：M | 颜色：蓝色</p>
+                            <p class="text-xs text-[#857C72] mb-2">尺码：M | 颜色：蓝色</p>
                             <p class="vintage-price">¥299</p>
                         </div>
                     </div>
                     <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                        <span class="text-xs text-[#666]">共1件商品 合计：<span class="vintage-price">¥299</span></span>
+                        <span class="text-xs text-[#857C72]">共1件商品 合计：<span class="vintage-price">¥299</span></span>
                         <div class="flex gap-2">
-                            <button class="px-4 py-1.5 border border-gray-200 rounded-full text-xs text-[#666] bg-white">查看详情</button>
+                            <button class="px-4 py-1.5 border border-gray-200 rounded-full text-xs text-[#857C72] bg-white">查看详情</button>
                             <button class="px-4 py-1.5 vintage-btn rounded-full text-xs">提醒发货</button>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                     <div class="flex items-center gap-2">
                         <span class="text-xs text-[#6b5d4f]">订单号：20241128002</span>
                     </div>
-                    <span class="text-xs text-black font-semibold">已完成</span>
+                    <span class="text-xs text-[#2D1C13] font-semibold">已完成</span>
                 </div>
                 <div class="p-4 bg-[#faf8f4]">
                     <div class="flex items-start gap-3 mb-3">
@@ -94,7 +94,7 @@
                     <div class="flex items-center gap-2">
                         <span class="text-xs text-[#6b5d4f]">订单号：20241125003</span>
                     </div>
-                    <span class="text-xs text-black font-semibold">待收货</span>
+                    <span class="text-xs text-[#2D1C13] font-semibold">待收货</span>
                 </div>
                 <div class="p-4 bg-[#faf8f4]">
                     <div class="flex items-start gap-3 mb-3">

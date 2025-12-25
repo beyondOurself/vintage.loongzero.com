@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索 - 古着商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../../scrollbar-control.js"></script>`n</head>
+<body class="vintage-bg" style="margin:0;padding:0;">
+    <!-- 顶部搜索栏 -->
+    <header class="bg-white sticky top-0 z-50 safe-top shadow-sm">
+        <div class="px-4 py-3">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-arrow-left text-[#2D1C13] text-lg"></i>
+                <div class="flex-1 flex items-center vintage-input px-4 py-2">
+                    <i class="fas fa-search text-[#857C72] text-sm mr-2"></i>
+                    <input type="text" placeholder="搜索商品" class="flex-1 bg-transparent text-sm outline-none text-[#2D1C13] placeholder-[#857C72]">
+                </div>
+                <button class="text-[#2D1C13] text-sm font-semibold">搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="px-4 py-4">
+        <!-- 热门搜索 -->
+        <section class="mb-6">
+            <div class="flex items-center justify-between mb-3">
+                <h2 class="text-base vintage-title">热门搜索</h2>
+                <i class="fas fa-fire text-[#876635]"></i>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-4 py-2 bg-[#351D14] text-sm text-white border border-[#351D14] font-medium tracking-wider uppercase rounded">复古夹克</span>
+                <span class="px-4 py-2 bg-white text-sm text-[#2D1C13] border border-[#857C72] font-medium tracking-wider uppercase rounded">vintage衬衫</span>
+                <span class="px-4 py-2 bg-white text-sm text-[#2D1C13] border border-[#857C72] font-medium tracking-wider uppercase rounded">90年代</span>
+                <span class="px-4 py-2 bg-white text-sm text-[#2D1C13] border border-[#857C72] font-medium tracking-wider uppercase rounded">古着牛仔</span>
+                <span class="px-4 py-2 bg-white text-sm text-[#2D1C13] border border-[#857C72] font-medium tracking-wider uppercase rounded">经典格纹</span>
+                <span class="px-4 py-2 bg-white text-sm text-[#2D1C13] border border-[#857C72] font-medium tracking-wider uppercase rounded">做旧工艺</span>
+            </div>
+        </section>
+
+        <!-- 搜索历史 -->
+        <section class="mb-6">
+            <div class="flex items-center justify-between mb-3">
+                <h2 class="text-base vintage-title">搜索历史</h2>
+                <button class="text-sm text-[#857C72]">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center justify-between card-shadow p-3">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-clock text-[#857C72]"></i>
+                        <span class="text-sm text-[#2D1C13] font-semibold">复古皮夹克</span>
+                    </div>
+                    <i class="fas fa-times text-[#857C72] text-xs"></i>
+                </div>
+                <div class="flex items-center justify-between card-shadow p-3">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-clock text-[#857C72]"></i>
+                        <span class="text-sm text-[#2D1C13] font-semibold">vintage工装</span>
+                    </div>
+                    <i class="fas fa-times text-[#857C72] text-xs"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- 推荐商品 -->
+        <section>
+            <h2 class="text-base vintage-title mb-3 tracking-wider uppercase">为你推荐</h2>
+            <div class="grid grid-cols-2 gap-3">
+                    <div class="card-shadow card-shadow-hover overflow-hidden">
+                        <div class="h-40 bg-[#351D14]">
+                            <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <p class="text-sm vintage-card-title mb-1 line-clamp-2">90年代复古夹克</p>
+                            <p class="vintage-price">¥299</p>
+                        </div>
+                    </div>
+                <div class="bg-white overflow-hidden card-shadow card-shadow-hover">
+                    <div class="h-40 bg-black">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-3">
+                        <p class="text-sm vintage-card-title mb-1 line-clamp-2">经典格纹衬衫</p>
+                        <p class="vintage-price">¥189</p>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden card-shadow card-shadow-hover">
+                    <div class="h-40 bg-black">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-3">
+                        <p class="text-sm vintage-card-title mb-1 line-clamp-2">复古牛仔外套</p>
+                        <p class="vintage-price">¥359</p>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden card-shadow card-shadow-hover">
+                    <div class="h-40 bg-black">
+                        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400&q=80" alt="商品" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-3">
+                        <p class="text-sm vintage-card-title mb-1 line-clamp-2">vintage皮夹克</p>
+                        <p class="vintage-price">¥599</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+

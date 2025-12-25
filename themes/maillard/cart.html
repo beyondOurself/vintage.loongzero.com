@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class="vintage-bg">
+    <script src="../../scrollbar-control.js"></script></head>
+<body class="vintage-bg" style="margin:0;padding:0;">
     <!-- 顶部导航 -->
     <header class="bg-white sticky top-0 z-50 safe-top shadow-sm">
         <div class="flex items-center justify-between px-4 py-3">
-            <i class="fas fa-arrow-left text-black text-lg"></i>
+            <i class="fas fa-arrow-left text-[#5C4033] text-lg"></i>
             <h1 class="text-lg font-bold gradient-text">购物车</h1>
-            <button class="text-sm text-black font-semibold">编辑</button>
+            <button class="text-sm text-[#5C4033] font-semibold">编辑</button>
         </div>
     </header>
 
@@ -25,22 +25,22 @@
             <div class="card-shadow p-3">
                 <div class="flex items-start gap-3">
                     <div class="flex items-center">
-                        <i class="fas fa-check-circle text-black text-xl"></i>
+                        <i class="fas fa-check-circle text-[#D2691E] text-xl"></i>
                     </div>
                     <div class="flex-1">
-                        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=200&q=80" alt="商品" class="w-20 h-20 object-cover border border-black">
+                        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=200&q=80" alt="商品" class="w-20 h-20 object-cover border border-[#C9A882] rounded">
                     </div>
                     <div class="flex-1">
                         <h3 class="text-sm font-bold vintage-card-title mb-1">90年代复古夹克</h3>
-                        <p class="text-xs text-[#666] mb-2">尺码：M | 颜色：蓝色</p>
+                        <p class="text-xs text-[#C9A882] mb-2">尺码：M | 颜色：蓝色</p>
                         <div class="flex items-center justify-between">
                             <span class="vintage-price">¥299</span>
                             <div class="flex items-center gap-3">
-                                <button class="w-7 h-7 border border-gray-200 rounded-full flex items-center justify-center bg-white">
-                                    <i class="fas fa-minus text-xs text-[#666]"></i>
+                                <button class="w-7 h-7 border border-[#C9A882] rounded-full flex items-center justify-center bg-white">
+                                    <i class="fas fa-minus text-xs text-[#C9A882]"></i>
                                 </button>
-                                <span class="text-sm text-[#2d2d2d] w-8 text-center font-semibold">1</span>
-                                <button class="w-7 h-7 bg-black rounded-full flex items-center justify-center">
+                                <span class="text-sm text-[#5C4033] w-8 text-center font-semibold">1</span>
+                                <button class="w-7 h-7 bg-[#8B6F47] rounded-full flex items-center justify-center">
                                     <i class="fas fa-plus text-xs text-white"></i>
                                 </button>
                             </div>
@@ -53,7 +53,7 @@
             <div class="bg-white p-3 card-shadow">
                 <div class="flex items-start gap-3">
                     <div class="flex items-center">
-                        <i class="fas fa-check-circle text-black text-xl"></i>
+                        <i class="fas fa-check-circle text-[#D2691E] text-xl"></i>
                     </div>
                     <div class="flex-1">
                         <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=200&q=80" alt="商品" class="w-20 h-20 object-cover rounded">
@@ -64,11 +64,11 @@
                         <div class="flex items-center justify-between">
                             <span class="vintage-price">¥189</span>
                             <div class="flex items-center gap-3">
-                                <button class="w-7 h-7 border border-gray-200 rounded-full flex items-center justify-center bg-white">
-                                    <i class="fas fa-minus text-xs text-[#666]"></i>
+                                <button class="w-7 h-7 border border-[#C9A882] rounded-full flex items-center justify-center bg-white">
+                                    <i class="fas fa-minus text-xs text-[#C9A882]"></i>
                                 </button>
-                                <span class="text-sm text-[#2d2d2d] w-8 text-center font-semibold">1</span>
-                                <button class="w-7 h-7 bg-black rounded-full flex items-center justify-center">
+                                <span class="text-sm text-[#5C4033] w-8 text-center font-semibold">1</span>
+                                <button class="w-7 h-7 bg-[#8B6F47] rounded-full flex items-center justify-center">
                                     <i class="fas fa-plus text-xs text-white"></i>
                                 </button>
                             </div>
@@ -82,7 +82,7 @@
                 <h2 class="text-base vintage-title mb-3 tracking-wider uppercase">为你推荐</h2>
                 <div class="grid grid-cols-2 gap-3">
                     <div class="bg-white overflow-hidden card-shadow card-shadow-hover">
-                        <div class="h-32 bg-black">
+                        <div class="h-32 bg-[#8B6F47]">
                             <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80" alt="商品" class="w-full h-full object-cover">
                         </div>
                         <div class="p-2">
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="bg-white overflow-hidden card-shadow card-shadow-hover">
-                        <div class="h-32 bg-black">
+                        <div class="h-32 bg-[#8B6F47]">
                             <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400&q=80" alt="商品" class="w-full h-full object-cover">
                         </div>
                         <div class="p-2">
@@ -109,10 +109,10 @@
         <div class="px-4 py-3">
             <div class="flex items-center justify-between mb-3">
                 <div class="flex items-center gap-2">
-                    <i class="fas fa-check-circle text-black text-xl"></i>
-                    <span class="text-sm text-[#2d2d2d] font-semibold">全选</span>
+                    <i class="fas fa-check-circle text-[#D2691E] text-xl"></i>
+                    <span class="text-sm text-[#5C4033] font-semibold">全选</span>
                 </div>
-                <div class="text-sm text-[#666]">
+                <div class="text-sm text-[#C9A882]">
                     合计：<span class="vintage-price text-lg">¥488</span>
                 </div>
             </div>
@@ -124,20 +124,20 @@
     <nav class="bottom-nav fixed bottom-16 left-0 right-0">
         <div class="flex items-center justify-around py-2">
             <div class="flex flex-col items-center">
-                <i class="fas fa-home text-[#999] text-base mb-1"></i>
-                <span class="text-[10px] text-[#999] tracking-wider uppercase">首页</span>
+                <i class="fas fa-home text-[#C9A882] text-base mb-1"></i>
+                <span class="text-[10px] text-[#C9A882] tracking-wider uppercase">首页</span>
             </div>
             <div class="flex flex-col items-center">
-                <i class="fas fa-th-large text-[#999] text-base mb-1"></i>
-                <span class="text-[10px] text-[#999] tracking-wider uppercase">分类</span>
+                <i class="fas fa-th-large text-[#C9A882] text-base mb-1"></i>
+                <span class="text-[10px] text-[#C9A882] tracking-wider uppercase">分类</span>
             </div>
             <div class="flex flex-col items-center">
-                <i class="fas fa-shopping-bag text-black text-base mb-1"></i>
-                <span class="text-[10px] text-black font-normal tracking-wider uppercase">购物车</span>
+                <i class="fas fa-shopping-bag text-[#D2691E] text-base mb-1"></i>
+                <span class="text-[10px] text-[#D2691E] font-medium tracking-wider uppercase">购物车</span>
             </div>
             <div class="flex flex-col items-center">
-                <i class="fas fa-user text-[#999] text-base mb-1"></i>
-                <span class="text-[10px] text-[#999] tracking-wider uppercase">我的</span>
+                <i class="fas fa-user text-[#C9A882] text-base mb-1"></i>
+                <span class="text-[10px] text-[#C9A882] tracking-wider uppercase">我的</span>
             </div>
         </div>
     </nav>

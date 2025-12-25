@@ -10,7 +10,7 @@
         .phone-frame {
             width: 375px;
             height: 812px;
-            background: #000000;
+            background: #351D14;
             border-radius: 50px;
             padding: 10px;
             box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255,255,255,0.1);
@@ -29,6 +29,31 @@
             height: 100%;
             border: none;
             border-radius: 40px;
+            overflow: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+            frameborder: 0;
+            scrolling: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* 完全隐藏滚动条 */
+        iframe::-webkit-scrollbar {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+        
+        iframe::-webkit-scrollbar-track {
+            display: none;
+            background: transparent;
+        }
+        
+        iframe::-webkit-scrollbar-thumb {
+            display: none;
+            background: transparent;
         }
         .notch {
             position: absolute;
@@ -37,7 +62,7 @@
             transform: translateX(-50%);
             width: 126px;
             height: 37px;
-            background: #000000;
+            background: #351D14;
             border-radius: 0 0 20px 20px;
             z-index: 10;
         }
@@ -45,20 +70,130 @@
             text-align: center;
             margin-top: 12px;
             font-size: 14px;
-            color: #666;
+            color: #857C72;
             font-weight: 500;
+        }
+        /* 主题切换按钮样式 */
+        .theme-switch-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #351D14;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .theme-switch-btn:hover {
+            background: #532D1C;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+        .theme-switch-btn:active {
+            transform: translateY(0);
+        }
+        /* 主题选择面板 */
+        .theme-panel {
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            z-index: 999;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            min-width: 280px;
+            max-width: 320px;
+            display: none;
+        }
+        .theme-panel.show {
+            display: block;
+        }
+        .theme-panel-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2D1C13;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #E8E5E0;
+        }
+        .theme-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 8px;
+        }
+        .theme-option:hover {
+            background: #F5F3F0;
+        }
+        .theme-option.active {
+            background: #F5F3F0;
+            border: 2px solid #876635;
+        }
+        .theme-preview {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            border: 1px solid #E8E5E0;
+        }
+        .theme-color-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .theme-info {
+            flex: 1;
+        }
+        .theme-name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #2D1C13;
+            margin-bottom: 4px;
+        }
+        .theme-desc {
+            font-size: 12px;
+            color: #857C72;
         }
     </style>
 </head>
-<body class="bg-white p-8 min-h-screen">
-    <div class="max-w-7xl mx-auto">
-        <h1 class="text-3xl font-medium mb-8 text-center text-black tracking-wider uppercase">Vintage App 原型展示</h1>
+    <body class="bg-[#F5F3F0] p-8 min-h-screen" style="margin:0;padding:0;">
+        <!-- 主题切换按钮 -->
+        <button class="theme-switch-btn" id="theme-toggle-btn" onclick="toggleThemePanel()">
+            <i class="fas fa-palette"></i>
+            <span>切换风格</span>
+        </button>
+        
+        <!-- 主题选择面板 -->
+        <div class="theme-panel" id="theme-panel">
+            <div class="theme-panel-title">选择风格主题</div>
+            <div id="theme-selector"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-medium mb-8 text-center text-[#2D1C13] tracking-wider uppercase">Vintage App 原型展示</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             <div class="mx-auto">
                 <div class="phone-frame relative">
                     <div class="notch"></div>
                     <div class="phone-screen">
-                        <iframe src="home.html"></iframe>
+                        <iframe src="themes/warm-earth/home.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto"></iframe>
                     </div>
                 </div>
                 <div class="phone-label">首页</div>
@@ -67,7 +202,7 @@
                 <div class="phone-frame relative">
                     <div class="notch"></div>
                     <div class="phone-screen">
-                        <iframe src="category.html"></iframe>
+                        <iframe src="themes/warm-earth/category.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto"></iframe>
                     </div>
                 </div>
                 <div class="phone-label">分类</div>
@@ -76,7 +211,7 @@
                 <div class="phone-frame relative">
                     <div class="notch"></div>
                     <div class="phone-screen">
-                        <iframe src="detail.html"></iframe>
+                        <iframe src="themes/warm-earth/detail.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto"></iframe>
                     </div>
                 </div>
                 <div class="phone-label">商品详情</div>
@@ -85,7 +220,7 @@
                 <div class="phone-frame relative">
                     <div class="notch"></div>
                     <div class="phone-screen">
-                        <iframe src="cart.html"></iframe>
+                        <iframe src="themes/warm-earth/cart.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto"></iframe>
                     </div>
                 </div>
                 <div class="phone-label">购物车</div>
@@ -94,7 +229,7 @@
                 <div class="phone-frame relative">
                     <div class="notch"></div>
                     <div class="phone-screen">
-                        <iframe src="search.html"></iframe>
+                        <iframe src="themes/warm-earth/search.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto"></iframe>
                     </div>
                 </div>
                 <div class="phone-label">搜索</div>
@@ -103,7 +238,7 @@
                 <div class="phone-frame relative">
                     <div class="notch"></div>
                     <div class="phone-screen">
-                        <iframe src="profile.html"></iframe>
+                        <iframe src="themes/warm-earth/profile.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto"></iframe>
                     </div>
                 </div>
                 <div class="phone-label">个人中心</div>
@@ -112,13 +247,31 @@
                 <div class="phone-frame relative">
                     <div class="notch"></div>
                     <div class="phone-screen">
-                        <iframe src="orders.html"></iframe>
+                        <iframe src="themes/warm-earth/orders.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto"></iframe>
                     </div>
                 </div>
                 <div class="phone-label">我的订单</div>
             </div>
         </div>
     </div>
+    
+    <script src="theme-switcher.js"></script>
+    <script>
+        // 切换主题面板显示/隐藏
+        function toggleThemePanel() {
+            const panel = document.getElementById('theme-panel');
+            panel.classList.toggle('show');
+        }
+        
+        // 点击外部关闭面板
+        document.addEventListener('click', (e) => {
+            const panel = document.getElementById('theme-panel');
+            const btn = document.getElementById('theme-toggle-btn');
+            if (panel && !panel.contains(e.target) && !btn.contains(e.target)) {
+                panel.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
 

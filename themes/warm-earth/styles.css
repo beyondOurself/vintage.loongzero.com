@@ -1,0 +1,298 @@
+/* 古着商城 - 暖色大地色系风格 */
+*,
+*::before,
+*::after {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #F5F3F0; /* 浅米色背景 */
+    color: #2D1C13; /* 深棕色文字 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* 安全区域适配 */
+.safe-top {
+    padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 滚动优化 */
+.scroll-smooth {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 完全隐藏滚动条 - 不占用任何空间 */
+html,
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+    display: none;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+    display: none;
+    background: transparent;
+}
+
+/* 隐藏滚动条（用于特定元素） */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* 图片懒加载占位 */
+.img-placeholder {
+    background: linear-gradient(90deg, #E8E5E0 25%, #D1D1CC 50%, #E8E5E0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* 底部导航栏 */
+.bottom-nav {
+    background: #FFFFFF;
+    border-top: 1px solid #E8E5E0;
+    box-shadow: 0 -2px 8px rgba(45, 28, 19, 0.05);
+}
+
+/* 卡片 */
+.card-shadow {
+    box-shadow: 0 2px 8px rgba(45, 28, 19, 0.08);
+    background: #FFFFFF;
+    border: 1px solid #E8E5E0;
+    border-radius: 8px;
+}
+
+.card-shadow-hover {
+    transition: all 0.3s ease;
+}
+
+.card-shadow-hover:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 4px rgba(45, 28, 19, 0.12);
+}
+
+/* 文字样式 */
+.gradient-text {
+    color: #2D1C13;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* 背景 */
+.vintage-bg {
+    background: #F5F3F0;
+}
+
+/* 按钮 - 主色 */
+.vintage-btn {
+    background: #351D14; /* MAHOGANY 深棕色 */
+    color: #FFFFFF;
+    border: 1px solid #351D14;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+}
+
+.vintage-btn:active {
+    background: #532D1C; /* BROWN DEER 稍浅的棕色 */
+    border-color: #532D1C;
+    transform: scale(0.98);
+}
+
+.vintage-btn-secondary {
+    background: #FFFFFF;
+    color: #351D14;
+    border: 1px solid #857C72; /* SMOKY TROUT 中棕色 */
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+}
+
+.vintage-btn-secondary:active {
+    background: #F5F3F0;
+    border-color: #58493A;
+}
+
+/* 强调按钮 - 铜色 */
+.vintage-btn-accent {
+    background: #876635; /* COPPER 铜色 */
+    color: #FFFFFF;
+    border: 1px solid #876635;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+}
+
+.vintage-btn-accent:active {
+    background: #A17148; /* CASHEW 浅铜色 */
+    border-color: #A17148;
+    transform: scale(0.98);
+}
+
+/* 标签 */
+.vintage-badge {
+    background: #876635; /* COPPER 铜色 */
+    color: #FFFFFF;
+    border: none;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+/* 价格 */
+.vintage-price {
+    color: #351D14; /* MAHOGANY 深棕色 */
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+/* 标题 */
+.vintage-title {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #2D1C13; /* 深棕色 */
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* 输入框 */
+.vintage-input {
+    background: #FFFFFF;
+    border: 1px solid #D1D1CC; /* SMOKE 浅灰色 */
+    border-radius: 6px;
+    color: #2D1C13;
+    padding: 10px 16px;
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.vintage-input::placeholder {
+    color: #857C72; /* SMOKY TROUT 中灰色 */
+}
+
+.vintage-input:focus {
+    outline: none;
+    border-color: #876635; /* COPPER 铜色 */
+    box-shadow: 0 0 0 2px rgba(135, 102, 53, 0.1);
+}
+
+/* 标签页 */
+.vintage-tab {
+    border-bottom: 2px solid transparent;
+    color: #857C72; /* SMOKY TROUT 中灰色 */
+    padding: 12px 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+}
+
+.vintage-tab.active {
+    border-bottom-color: #876635; /* COPPER 铜色 */
+    color: #351D14; /* MAHOGANY 深棕色 */
+    font-weight: 600;
+}
+
+/* 卡片标题 */
+.vintage-card-title {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #2D1C13; /* 深棕色 */
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+/* 分隔线 */
+.vintage-divider {
+    height: 1px;
+    background: #E8E5E0; /* 浅米色分隔线 */
+    margin: 16px 0;
+}
+
+/* 强调文字 */
+.vintage-accent {
+    color: #876635; /* COPPER 铜色 */
+}
+
+/* 次要文字 */
+.vintage-muted {
+    color: #857C72; /* SMOKY TROUT 中灰色 */
+}
