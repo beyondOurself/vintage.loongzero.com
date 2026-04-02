@@ -3,13 +3,14 @@ class ThemeSwitcher {
     constructor() {
         this.currentTheme = localStorage.getItem('currentTheme') || 'warm-earth';
         this.themes = [];
+        this.cacheBuster = Date.now().toString(36);
         this.init();
     }
 
     async init() {
         // 加载主题配置
         try {
-            const response = await fetch('themes.json');
+            const response = await fetch(`themes.json?v=${this.cacheBuster}`);
             this.themes = await response.json();
             this.renderThemeSelector();
             this.applyTheme(this.currentTheme);
@@ -73,7 +74,7 @@ class ThemeSwitcher {
         
         iframes.forEach((iframe, index) => {
             if (pages[index]) {
-                iframe.src = `${theme.path}/${pages[index]}.html`;
+                iframe.src = `${theme.path}/${pages[index]}.html?v=${this.cacheBuster}`;
             }
         });
 
